@@ -1,0 +1,20 @@
+#!/bin/zsh
+#
+#
+# Modified from https://github.com/dustinkirkland/hollywood
+
+
+mpcs=$(dirname $0:A)"/../share/mac_port_commands.sh"
+source $mpcs
+
+command -v hexdump >/dev/null 2>&1 || exit 1
+
+trap "pkill -f hollywood >/dev/null 2>&1; exit" INT
+
+while true; do
+	for f in $(ls /usr/bin/ | sort -R); do
+		color=$(hollywood_colorize g)
+		head -c 4096 "/usr/bin/$f" | hexdump -C> >(sed $color>&1)
+		sleep 0.7
+	done
+done

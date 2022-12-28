@@ -1,0 +1,148 @@
+#!/bin/bash
+#
+# This is the version of hollywood for MacOSX. Suggest improvements for this version at github.com/real-aazam/hollywood
+
+# hollywood originally created by Dustin Kirkland <dustin.kirkland@gmail.com> https://github.com/dustinkirkland/hollywood
+#
+# hollywood: create a hollywood suitable consoles of tech geekery - Dustin Kirkland <dustin.kirkland@gmail.com>
+# 
+# Arguments: 
+# 		-d|--delay DELAY		The delay in seconds before rearranging splits (default=10s)
+#		-s|--splits SPLITS		The number of splits to divide your screen
+#		-e|--expand				Expand terminal screen on script startup (0 or 1, default = 1)
+#		-h|--help				Print help message
+
+PKG="hollywood"
+trap "pkill -f hollywood; exit 0" INT
+
+
+
+Help()
+{
+
+	# Display Help
+	echo "hollywood: create a hollywood suitable consoles of tech geekery"
+	echo "hollywood was originally created by Dustin Kirkland"
+	echo ""
+	echo "This is the version for MacOSX. Suggest improvements for this version at github.com/real-aazam/hollywood"
+	echo ""
+	echo "usage: hollywood [-d DELAY] [-s SPLITS] [-e EXPAND]"
+	echo ""
+	echo "Optional arguments:"
+	echo "	-d|--delay DELAY : The delay in seconds before rearranging splits (default=10)"
+	echo "	-s|--splits SPLITS : The number of splits to divide your screen"
+	echo "	-e|--expand EXPAND : Expand terminal screen on script startup (0 or 1, default = 1)"
+	echo "	-h|--help : Print this help message"
+	echo ""
+	echo ""
+
+}
+
+spin_up() {
+	local w=
+	local panes=
+	local splits=
+	local pane=
+	local dir="v"
+	local split=1
+	sleep 0.5
+	for w in $(ls "$WIDGET_DIR" | sort -R); do
+		[ "$dir" = "-v" ] && dir="-h" || dir="-v"
+		panes=$(tmux list-panes -t $PKG 2>/dev/null)
+		# Allow for failed widgets
+		splits=$(echo "$panes" | wc -l)
+		pane=$((RANDOM % $splits))
+		tmux split-window $dir -t ${PKG}.$pane "nice -n 19 $WIDGET_DIR/$w" >/dev/null 2>&1
+		sleep 0.2
+		split=$((split+1))
+		if [ $split -ge $SPLITS ]; then
+			break
+		fi
+	done
+}
+
+WIDGET_DIR="$(dirname $0)/resources/widgets"
+SPLITS=$(ls "$WIDGET_DIR" | wc -l)
+DELAY=10
+EXPAND=1
+WIDGETS_FOUND=0
+
+while [ ! -z "$1" ]; do
+	case "$1" in
+		-d|--delay)
+			DELAY="$2"
+			shift 2
+		;;
+		-s|--splits)
+			SPLITS="$2"
+			shift 2
+		;;
+		-e|--expand)
+			EXPAND="$2"
+			shift 2
+		;;
+		-w|--widgets)
+			WIDGETS_FOUND="$2"
+			shift 2
+		;;
+		-h|--help|*)
+			# TODO: exec man $PKG
+			Help
+			exit 
+
+		;;
+	esac
+done
+
+
+
+
+
+widgets_all=$(ls "$WIDGET_DIR/" | sort -R)
+if [[ "$WIDGETS_FOUND" == "1" ]]; then printf '%s\n' "${widgets_all[@]}"; exit; fi;
+
+
+
+
+if [[ "$EXPAND" == "1" ]]; then printf "\033[8;99999;99999t"; fi;
+
+widget1=$(ls "$WIDGET_DIR/" | sort -R | head -n1)
+
+
+arrangements="main-horizontal main-vertical tiled"
+
+if [ -z "$TMUX" ]; then
+	# Not in a tmux session: start one, with
+	# byobu if it's found, else with plain tmux
+	command -v byobu >/dev/null 2>&1
+	if [ $? -eq 0 ]; then
+		tmux_launcher=byobu
+	else
+		tmux_launcher=tmux
+	fi
+	$tmux_launcher new-session -d -s $PKG "/bin/bash"
+	$tmux_launcher send-keys -t $PKG "$0 $1"
+	$tmux_launcher send-keys -t $PKG Enter
+	exec $tmux_launcher attach-session -t $PKG
+	exit 1
+fi
+
+tmux new-window -n $PKG "$WIDGET_DIR/$widget1" \; \
+	set-option -g pane-active-border-bg "default" \; \
+	set-option -g pane-active-border-fg "default" >/dev/null 2>&1
+
+spin_up
+
+i=0
+while true; do
+	i=$((i+1))
+	if [ "$((i % DELAY))" = "0" ]; then
+		tmux kill-pane -a -t $PKG.bottom-right
+		spin_up
+	fi
+	if [ $(tmux list-panes -t $PKG 2>/dev/null | wc -l) -gt 0 ]; then
+		sleep 1
+		continue
+	fi
+	exit 0
+done

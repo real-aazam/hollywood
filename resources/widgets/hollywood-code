@@ -1,0 +1,26 @@
+#!/bin/zsh
+#
+#
+# Modified from https://github.com/dustinkirkland/hollywood
+
+
+mpcs=$(dirname $0:A)"/../share/mac_port_commands.sh"
+source $mpcs
+
+command -v locate >/dev/null 2>&1 || exit 1
+
+trap "pkill -f hollywood >/dev/null 2>&1; exit" INT
+
+
+
+while true; do
+	FILES=($(find /usr -type f -name "*.c" 2>/dev/null | head -n 4096))
+	for f in $FILES; do
+		[ -r "$f" ] || continue
+		[ -s "$f" ] || continue
+		[ -f "$f" ] || continue
+		cat "$f" 2>/dev/null || true
+		
+		sleep 0.1
+	done
+done

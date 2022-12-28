@@ -1,0 +1,31 @@
+#!/bin/zsh
+#
+#
+# Modified from https://github.com/dustinkirkland/hollywood
+
+
+mpcs=$(dirname $0:A)"/../share/mac_port_commands.sh"
+source $mpcs
+
+command -v ssh-keygen >/dev/null 2>&1 || exit 1
+
+PKG=hollywood
+tmpdir=`mktemp -d -t hollywood` || exit 1
+tmpfile=$tmpdir"/hollywood-tmp"
+
+
+trap "rm -rf $tmpdir 2>/dev/null && pkill -f hollywood >/dev/null 2>&1; exit" INT
+
+
+while true; do
+	art=$(ssh-keygen -vvv -b 1024 -t dsa -N "" -f $tmpfile)
+	rm -f $tmpfile $tmpfile.pub
+	wait
+	clear
+	color=$(hollywood_colorize w r b)
+	echo "$art"> >(sed $color>&1)
+	sleep 2
+done
+
+
+

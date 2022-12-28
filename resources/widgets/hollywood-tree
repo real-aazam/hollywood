@@ -1,0 +1,25 @@
+#!/bin/zsh
+#
+#
+# Modified from https://github.com/dustinkirkland/hollywood
+
+
+mpcs=$(dirname $0:A)"/../share/mac_port_commands.sh"
+source $mpcs
+
+command -v tree >/dev/null 2>&1 || exit 1
+
+trap "pkill -f hollywood >/dev/null 2>&1; exit" INT
+
+DIRS="/Users"
+
+while true; do
+	for d1 in $DIRS; do
+		for d2 in $d1/*; do
+			if [ -x $d2 ]; then
+				tree $d2
+				sleep 0.5
+			fi
+		done
+	done
+done

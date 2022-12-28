@@ -1,0 +1,17 @@
+#!/bin/zsh
+#
+#
+# Modified from https://github.com/dustinkirkland/hollywood
+
+
+mpcs=$(dirname $0:A)"/../share/mac_port_commands.sh"
+source $mpcs
+
+command -v mplayer >/dev/null 2>&1 || exit 1
+
+trap "pkill -f hollywood >/dev/null 2>&1; exit" INT
+
+
+DISPLAY= mplayer -vo caca -loop 0 -ss $((RANDOM % 100)) -speed 100 $MPLAYER_OPTS $(dirname $0:A)"/../share/soundwave.mp4"
+
+

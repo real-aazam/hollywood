@@ -1,0 +1,22 @@
+#!/bin/zsh
+#
+#
+# Modified from https://github.com/dustinkirkland/hollywood
+
+
+mpcs=$(dirname $0:A)"/../share/mac_port_commands.sh"
+source $mpcs
+
+
+
+trap "pkill -f hollywood >/dev/null 2>&1; exit" INT
+
+while true; do
+	LOGS=($(find /var/log -type f -name "*.log" 2>/dev/null | head -n 4096 | sort -R))
+	echo $LOGS
+	for log in $LOGS; do
+		color=$(hollywood_colorize g w)
+		cat "$log" 2>/dev/null> >(sed $color>&1)
+		sleep 0.5
+	done
+done

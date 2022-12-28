@@ -1,0 +1,18 @@
+#!/bin/zsh
+#
+#
+# Modified from https://github.com/dustinkirkland/hollywood
+
+
+mpcs=$(dirname $0:A)"/../share/mac_port_commands.sh"
+source $mpcs
+
+command -v jp2a >/dev/null 2>&1 || exit 1
+
+trap "pkill -f hollywood >/dev/null 2>&1; exit" INT
+
+
+while true; do
+	jp2a --colors -z --fill $(dirname $0:A)"/../share/map.jpg"
+	sleep 1
+done

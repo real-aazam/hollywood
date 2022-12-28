@@ -1,0 +1,18 @@
+#!/bin/zsh
+#
+#
+# Modified from https://github.com/dustinkirkland/hollywood
+
+
+mpcs=$(dirname $0:A)"/../share/mac_port_commands.sh"
+source $mpcs
+
+command -v apg >/dev/null 2>&1 || exit 1
+
+trap "pkill -f hollywood >/dev/null 2>&1; exit" INT
+
+while true; do
+	color=$(hollywood_colorize y w)
+	apg -qlt -n 1 -m 4 1> >(sed $color>&1)
+	sleep 0.2
+done

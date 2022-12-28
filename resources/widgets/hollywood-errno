@@ -1,0 +1,18 @@
+#!/bin/zsh
+#
+#
+# Modified from https://github.com/dustinkirkland/hollywood
+
+
+mpcs=$(dirname $0:A)"/../share/mac_port_commands.sh"
+source $mpcs
+
+command -v sort >/dev/null 2>&1 || exit 1
+
+trap "pkill -f hollywood >/dev/null 2>&1; exit" INT
+
+while true; do
+	color=$(hollywood_colorize r)
+	sort -R $(dirname $0:A)"/../share/mac_errors.txt"> >(sed $color>&1)
+	sleep 0.6
+done

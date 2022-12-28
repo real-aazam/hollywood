@@ -1,0 +1,897 @@
+ERROR -32768 svTempDisable: Temporarily disable card but run primary init.
+ERROR -32640 svDisabled: Reserve range -32640 to -32768 for Apple temp disables.
+ERROR -32615 fontNotOutlineErr: bitmap font passed to routine that does outlines only
+ERROR -23048 outOfMemory: Not enough memory is available to issue the needed DNR query or to build the DNR cache.
+ERROR -23047 dnrErr: The domain name server has returned an error.
+ERROR -23046 noAnsErr: None of the known name servers are responding.
+ERROR -23045 authNameErr: The domain name does not exist.
+ERROR -23044 noNameServer: No name server can be found for the specified name string.
+ERROR -23043 noResultProc: No result procedure is passed to the address translation call when the resolver must be used to find the address.
+ERROR -23042 cacheFault: The name specified cannot be found in the cache. The domain name resolver will now query the domain name server and return the answer in the callback procedure.
+ERROR -23041 nameSyntaxErr: The <> field had a syntax error. The address was given in dot notation (that is, W.X.Y.Z) and did not conform to the syntax for an IP address.
+ERROR -23037 ipRouteErr: No gateway available to manage routing of packets to off-network destinations.
+ERROR -23036 ipNoFragMemErr: Insufficient internal driver buffers available to fragment this packet on send.
+ERROR -23035 icmpEchoTimeoutErr: The icmp echo packet was not responded to in the indicated timeout period.
+ERROR -23033 ipDestDeadErr: The destination host is not responding to address resolution requests.
+ERROR -23032 ipDontFragErr: The pack is too large to send without fragmenting and the Don't Fragment flag is set.
+ERROR -23017 duplicateSocket: A stream is already open using the local UDP port or a TCP connection already exists between the local IP address and TCP port, and the specified remote IP address and TCP port.
+ERROR -23016 commandTimeout: The specified command action was not completed in the specified time period.
+ERROR -23015 openFailed: The connection came halfway up and then failed.
+ERROR -23014 invalidWDS: The WDS pointer was 0 (nil).
+ERROR -23014 invalidRDS: The RDS refers to receive buffers not owned by the user.
+ERROR -23013 invalidBufPtr: The receive buffer area pointer is 0 (nil).
+ERROR -23012 connectionTerminated: The TCP connection was broken; the reason will be given a terminate ASR.
+ERROR -23011 streamAlreadyOpen: An open stream is already using the receive buffer area.
+ERROR -23010 invalidStreamPtr: The specified TCP or UDP stream is not open.
+ERROR -23009 insufficientResources: 64 TCP or UDP streams are already open.
+ERROR -23008 connectionDoesntExist: The TCP stream has no open connection.
+ERROR -23007 connectionExists: The TCP or UDP stream already has an open connection.
+ERROR -23006 invalidLength: The total amount of data described by the WDS was either 0 or greater than 65,535 bytes.
+ERROR -23005 connectionClosing: A TCPClose command was already issued so there is no more data to send on this connection.
+ERROR -23004 ipBadAddr: Error in getting an address from a server or the address is already in use by another machine.
+ERROR -23003 ipLoadErr: Not enough room in the application heap (Macintosh 512K enhanced only)
+ERROR -23002 ipNoCnfgErr: A configuration resource is missing.
+ERROR -23001 ipBadCnfgErr: The manually set address is configured improperly.
+ERROR -23000 ipBadLapErr: Unable to initialize the local network handler.
+ERROR -20002 invalidIndexErr: The recordIndex parameter is not valid.
+ERROR -20001 recordDataTooBigErr: The record data is bigger than buffer size (1024 bytes).
+ERROR -20000 unknownInsertModeErr: There is no such an insert mode.
+ERROR -13005 pmRecvEndErr: during receive pmgr did not finish hs configured for this connection
+ERROR -13004 pmRecvStartErr: during receive pmgr did not start hs
+ERROR -13003 pmSendEndErr: during send pmgr did not finish hs
+ERROR -13002 pmSendStartErr: during send pmgr did not start hs
+ERROR -13001 pmReplyTOErr: Timed out waiting for reply
+ERROR -13000 pmBusyErr: Power Mgr never ready to start handshake
+ERROR -11005 pictureDataErr: the picture data was invalid
+ERROR -11004 colorsRequestedErr: the number of colors requested was illegal
+ERROR -11003 cantLoadPickMethodErr: unable to load the custom pick proc
+ERROR -11002 pictInfoVerbErr: the passed verb was invalid
+ERROR -11001 pictInfoIDErr: the internal consistancy check for the PictInfoID is wrong
+ERROR -11000 pictInfoVersionErr: wrong version of the PictInfo structure
+ERROR -10115 telBadSampleRate: incompatible sample rate
+ERROR -10114 telBadSWErr: Software not installed properly
+ERROR -10113 telDetAlreadyOn: detection is already turned on
+ERROR -10112 telAutoAnsNotOn: autoAnswer in not turned on
+ERROR -10111 telValidateFailed: telValidate failed
+ERROR -10110 telBadProcID: invalid procID
+ERROR -10109 telDeviceNotFound: device not found
+ERROR -10108 telBadCodeResource: code resource not found
+ERROR -10107 telInitFailed: initialization failed
+ERROR -10106 telNoCommFolder: CommunicationsExtensions Ä not found
+ERROR -10103 telUnknownErr: unable to set config
+ERROR -10102 telNoSuchTool: unable to find tool with name specified
+ERROR -10101 telNoTools: unable to find any telephone tools
+ERROR -10091 telBadFunction: bad msgCode specified
+ERROR -10090 telPBErr: parameter block error bad format
+ERROR -10082 telCANotDeflectable: CA not "deflectable"
+ERROR -10081 telCANotRejectable: CA not "rejectable"
+ERROR -10080 telCANotAcceptable: CA not "acceptable"
+ERROR -10072 telTermNotOpen: terminal not opened via TELOpenTerm
+ERROR -10071 telStillNeeded: terminal driver still needed by someone else
+ERROR -10070 telAlreadyOpen: terminal already open
+ERROR -10064 telNoCallbackRef: no call back reference was specified but is required
+ERROR -10063 telDisplayModeNotSupp: display mode not supported by tool
+ERROR -10062 telBadDisplayMode: bad display mode specified
+ERROR -10061 telFwdTypeNotSupp: forward type not supported by tool
+ERROR -10060 telDNTypeNotSupp: DN type not supported by tool
+ERROR -10059 telBadRate: bad rate specified
+ERROR -10058 telBadBearerType: bad bearerType specified
+ERROR -10057 telBadSelect: unable to select or deselect DN
+ERROR -10056 telBadParkID: bad park id specified
+ERROR -10055 telBadPickupGroupID: bad pickup group ID specified
+ERROR -10054 telBadFwdType: bad fwdType specified
+ERROR -10053 telBadFeatureID: bad feature ID specified
+ERROR -10052 telBadIntercomID: bad intercom ID specified
+ERROR -10051 telBadPageID: bad page ID specified
+ERROR -10050 telBadDNType: DN type invalid
+ERROR -10047 telConfLimitExceeded: attempt to exceed switch conference limits
+ERROR -10046 telCBErr: call back feature not set previously
+ERROR -10045 telTransferRej: transfer request rejected
+ERROR -10044 telTransferErr: transfer not prepared
+ERROR -10043 telConfRej: conference request was rejected
+ERROR -10042 telConfErr: conference was not prepared
+ERROR -10041 telConfNoLimit: no limit was specified but required
+ERROR -10040 telConfLimitErr: limit specified is too high for this configuration
+ERROR -10033 telFeatNotSupp: feature program call not supported by this tool
+ERROR -10032 telFeatActive: feature already active
+ERROR -10031 telFeatNotAvail: feature subscribed but not available
+ERROR -10030 telFeatNotSub: feature not subscribed
+ERROR -10024 telDNDTypeNotSupp: DND type is not supported by this tool
+ERROR -10023 telBadDNDType: bad DND type specified
+ERROR -10022 telIntExtNotSupp: internal external type not supported by this tool
+ERROR -10021 telBadIntExt: bad internal external error
+ERROR -10020 telStateNotSupp: device state not supported by tool
+ERROR -10019 telBadStateErr: bad device state specified
+ERROR -10018 telIndexNotSupp: index not supported by this tool
+ERROR -10017 telBadIndex: bad index specified
+ERROR -10016 errAELocalOnly or telAPattNotSupp: alerting pattern not supported by tool
+ERROR -10015 errAECantUndo or telBadAPattErr: bad alerting pattern specified
+ERROR -10014 errAENotASingleObject or telVTypeNotSupp: volume type not supported by this tool
+ERROR -10013 errAENoUserSelection or telBadVTypeErr: bad volume type error
+ERROR -10012 errAENoSuchTransaction or telBadLevelErr: bad volume level setting
+ERROR -10011 errAEInTransaction or telHTypeNotSupp: hook type not supported by this tool
+ERROR -10010 errAECantHandleClass or telBadHTypeErr: bad hook type specified
+ERROR -10009 errAECantSupplyType
+ERROR -10008 errAENotAnElement or telNoOpenErr: unable to open terminal
+ERROR -10007 errAEIndexTooLarge or telNoMemErr: no memory to allocate handle
+ERROR -10006 errAEWriteDenied or telCAUnavail: a CA is not available
+ERROR -10005 errAEReadDenied or telBadProcErr: bad msgProc specified
+ERROR -10004 errAEPrivilegeError or telBadHandErr: bad handle specified
+ERROR -10003 errAENotModifiable or telBadCAErr: TELCAHandle not found or invalid
+ERROR -10002 errAEBadKeyForm or telBadDNErr: TELDNHandle not found or invalid
+ERROR -10001 errAETypeError or telBadTermErr: invalid TELHandle or handle not found
+ERROR -10000 errAEEventFailed
+ERROR -9999 cannotMoveAttachedController
+ERROR -9998 controllerHasFixedHeight
+ERROR -9997 cannotSetWidthOfAttachedController
+ERROR -9996 controllerBoundsNotExact
+ERROR -9995 editingNotAllowed
+ERROR -9994 badControllerHeight
+ERROR -9408 deviceCantMeetRequest
+ERROR -9407 seqGrabInfoNotAvailable
+ERROR -9406 badSGChannel
+ERROR -9405 couldntGetRequiredComponent
+ERROR -9404 notEnoughDiskSpaceToGrab
+ERROR -9403 notEnoughMemoryToGrab
+ERROR -9402 cantDoThatInCurrentMode
+ERROR -9401 grabTimeComplete
+ERROR -9400 noDeviceForChannel
+ERROR -8976 codecNothingToBlitErr
+ERROR -8975 codecCantQueueErr
+ERROR -8974 codecCantWhenErr
+ERROR -8973 codecOpenErr
+ERROR -8972 codecConditionErr
+ERROR -8971 codecExtensionNotFoundErr
+ERROR -8970 codecDataVersErr
+ERROR -8969 codecBadDataErr
+ERROR -8968 codecWouldOffscreenErr
+ERROR -8967 codecAbortErr
+ERROR -8966 codecSpoolErr
+ERROR -8965 codecImageBufErr
+ERROR -8964 codecScreenBufErr
+ERROR -8963 codecSizeErr
+ERROR -8962 codecUnimpErr
+ERROR -8961 noCodecErr
+ERROR -8960 codecErr
+ERROR -6231 kDMMainDisplayCannotMoveErr: Trying to move main display (or a display mirrored to it) or kDMNoDeviceTableclothErr: obsolete
+ERROR -6230 kDMDisplayAlreadyInstalledErr: Attempt to add an already installed display.
+ERROR -6229 kDMDisplayNotFoundErr: Could not find item (will someday remove). or kDMNotFoundErr: Could not find item.
+ERROR -6228 kDMDriverNotDisplayMgrAwareErr: Video Driver does not support display manager.
+ERROR -6227 kDMSWNotInitializedErr: Required software not initialized (eg windowmanager or display mgr).
+ERROR -6226 kSysSWTooOld: Missing critical pieces of System Software.
+ERROR -6225 kDMMirroringNotOn: Returned by all calls that need mirroring to be on to do their thing.
+ERROR -6224 kDMCantBlock: Mirroring is already on canÕt Block now (call DMUnMirror() first).
+ERROR -6223 kDMMirroringBlocked: DMBlockMirroring() has been called.
+ERROR -6222 kDMWrongNumberOfDisplays: Can only handle 2 displays for now.
+ERROR -6221 kDMMirroringOnAlready: Returned by all calls that need mirroring to be off to do their thing.
+ERROR -6220 kDMGenErr: Unexpected Error
+ERROR -5553 gestaltLocationErr: gestalt function ptr wasn't in sysheap
+ERROR -5552 gestaltDupSelectorErr: tried to add an entry that already existed
+ERROR -5551 gestaltUndefSelectorErr: undefined selector was passed to Gestalt
+ERROR -5550 gestaltUnknownErr: value returned if Gestalt doesn't know the answer
+ERROR -5502 envVersTooBig: Version bigger than call can handle
+ERROR -5501 envBadVers: Version non-positive
+ERROR -5500 envNotPresent: returned by glue.
+ERROR -5044 afpInsideTrashErr: the folder being shared is inside the trash folder OR the shared folder is being moved into the trash folder OR the folder is being moved to the trash and it contains a shared folder
+ERROR -5043 afpInsideSharedErr: the folder being shared is inside a shared folder OR the folder contains a shared folder and is being moved into a shared folder OR the folder contains a shared folder and is being moved into the descendent of a shared folder.
+ERROR -5042 afpPwdExpiredErr: the password being used is too old: this requires the user to change the password before log-in can continue
+ERROR -5041 afpPwdTooShortErr: the password being set is too short: there is a minimum length that must be met or exceeded
+ERROR -5040 afpPwdSameErr: someone tried to change their password to the same password on a mantadory password change
+ERROR -5039 afpBadIDErr
+ERROR -5038 afpSameObjectErr
+ERROR -5037 afpCatalogChanged
+ERROR -5036 afpDiffVolErr
+ERROR -5035 afpIDExists
+ERROR -5034 afpIDNotFound
+ERROR -5033 afpContainsSharedErr: the folder being shared contains a shared folder
+ERROR -5032 afpObjectLocked: Object is MRDW inhibited
+ERROR -5031 afpVolLocked: Volume is Read-Only
+ERROR -5030 afpIconTypeError
+ERROR -5029 afpDirNotFound
+ERROR -5028 afpCantRename
+ERROR -5027 afpServerGoingDown
+ERROR -5026 afpTooManyFilesOpen
+ERROR -5025 afpObjectTypeErr
+ERROR -5024 afpCallNotSupported
+ERROR -5023 afpUserNotAuth
+ERROR -5022 afpSessClosed
+ERROR -5021 afpRangeOverlap
+ERROR -5020 afpRangeNotLocked
+ERROR -5019 afpParmErr
+ERROR -5018 afpObjectNotFound
+ERROR -5017 afpObjectExists
+ERROR -5016 afpNoServer
+ERROR -5015 afpNoMoreLocks
+ERROR -5014 afpMiscErr
+ERROR -5013 afpLockErr
+ERROR -5012 afpItemNotFound
+ERROR -5011 afpFlatVol
+ERROR -5010 afpFileBusy
+ERROR -5009 afpEofError
+ERROR -5008 afpDiskFull
+ERROR -5007 afpDirNotEmpty
+ERROR -5006 afpDenyConflict
+ERROR -5005 afpCantMove
+ERROR -5004 afpBitmapErr
+ERROR -5003 afpBadVersNum
+ERROR -5002 afpBadUAM
+ERROR -5001 afpAuthContinue
+ERROR -5000 afpAccessDenied
+ERROR -4009 noHelpForItem
+ERROR -4008 badProfileError
+ERROR -4007 colorSyncNotInstalled
+ERROR -4006 pickerCantLive
+ERROR -4005 cantLoadPackage
+ERROR -4004 cantCreatePickerWindow
+ERROR -4003 cantLoadPicker
+ERROR -4002 pickerResourceError
+ERROR -4001 requiredFlagsDontMatch
+ERROR -4000 invalidPickerType
+ERROR -3180 kOTCanceledErr: An outstanding call was canceled.
+ERROR -3179 kOTBadSyncErr: A call to Sync was made at non-SystemTask time.
+ERROR -3178 kOTProtocolErr: An unspecified protocol error occurred.
+ERROR -3177 kOTQFullErr: The maximum number of outstanding indications has been reached for the endpoint.
+ERROR -3176 kOTResAddressErr: The address to which this endpoint is bound differs from that of the endpoint that received the connection request; thus, this endpoint cannot accept this connection request.
+ERROR -3175 kOTResQLenErr: When this endpoint was bound (see Bind), the qlen parameter was greater than zero. But to accept a connection on an alternate end-point, such as this one, the endpoint must be bound with a qlen parameter equal to zero.
+ERROR -3174 kOTProviderMismatchErr: The endpoint that is to accept the connection is not the same kind of endpoint as this one.
+ERROR -3173 kOTIndOutErr: There are outstanding connection indications on the endpoint. All other connection indications must be handled either by rejecting them with SndDisconnect, or by accepting them with Accept.
+ERROR -3172 kOTAddressBusyErr: The requested address is in use, or this endpoint does not support multiple connections with the same local and remote addresses. This result code indicates that a connection already exists. As a return value for a Bind call, it may also indicate that no dynamic addresses are available for protocols or configuration methods that allow dynamic addressing.
+ERROR -3171 kOTBadQLenErr: The argument qlen when the endpoint was bound with Bind was zero.
+ERROR -3170 kOTBadNameErr: The endpoint name is invalid.
+ERROR -3169 kOTStructureTypeErr: An unsupported structure type was passed in the structType field. This error is also returned when the structType field is inconsistent with the endpoint type.
+ERROR -3168 kOTStateChangeErr: The endpoint is undergoing a transient state change. This error is returned when a function call is made while an endpoint is in the process of changing states.
+ERROR -3167 kOTNotSupportedErr: This action is not supported by this endpoint.
+ERROR -3166 kOTNoReleaseErr: No orderly release indication currently exists on this endpoint.
+ERROR -3165 kOTBadFlagErr: An invalid flag was specified.
+ERROR -3164 kOTNoUDErrErr: No unit data error indication currently exists on this endpoint.
+ERROR -3163 kOTNoDisconnectErr: No disconnect indication is available.
+ERROR -3162 kOTNoDataErr: This endpoint is in non-blocking mode, but no data is currently available. It is also returned by LookupName when no names are found.
+ERROR -3161 kOTFlowErr: The endpoint is in asynchronous mode, but the flow control mechanism prevents the endpoint from accepting any data at this time.
+ERROR -3160 kOTBufferOverflowErr: The number of bytes allocated to hold a result is greater than zero, but not sufficient to store the result.
+ERROR -3159 kOTBadDataErr: The amount of client data specified was not within the bounds allowed by the endpoint.
+ERROR -3158 kOTLookErr: An asynchronous event has occurred on this endpoint.
+ERROR -3156 kOTBadSequenceErr: An invalid sequence number was specified, or a NULL call pointer was specified when rejecting a connection request.
+ERROR -3155 kOTOutStateErr: The function was issued in the wrong sequence.
+ERROR -3154 kOTNoAddressErr: The endpoint could not allocate an address, or an address was required and not supplied by the client.
+ERROR -3153 kOTBadReferenceErr: The specified EndpointRef or TEndpoint* does not refer to a valid endpoint.
+ERROR -3152 kOTAccessErr: The user does not have permission to negotiate the specified address or options.
+ERROR -3151 kOTBadOptionErr: The specified protocol options were in an incorrect format or contained illegal information.
+ERROR -3150 kOTBadAddressErr: The specified protocol address was in an incorrect format or contained illegal information.
+ERROR -3109 sktClosedErr
+ERROR -3108 recNotFnd
+ERROR -3107 atpBadRsp
+ERROR -3106 atpLenErr
+ERROR -3105 readQErr
+ERROR -3104 extractErr
+ERROR -3103 ckSumErr
+ERROR -3102 noMPPErr
+ERROR -3101 buf2SmallErr
+ERROR -3032 noPrefAppErr
+ERROR -3031 badTranslationSpecErr
+ERROR -3030 noTranslationPathErr
+ERROR -3026 couldNotParseSourceFileErr: Source document does not contain source type
+ERROR -3025 invalidTranslationPathErr: Source type to destination type not a valid path
+ERROR -3003 componentDontRegister
+ERROR -3002 componentNotCaptured
+ERROR -3001 validInstancesExist
+ERROR -3000 invalidComponentID
+ERROR -2899 fragLastErrCode: ie: an application's main fragment had no entry point - or - an accerated resource had no entry point or it had a termination routine etc...
+ERROR -2824 fragInvalidFragmentUsage: fragment targeted for an unacceptable architecture
+ERROR -2823 fragArchError: no application found in cfrg (for Process Manager)
+ERROR -2822 fragAppNotFound: user intialization routine did not return noErr
+ERROR -2821 fragUserInitProcErr: fragment container corrupted (known format)
+ERROR -2820 fragCorruptErr: internal inconstistancy
+ERROR -2819 fragConstErr: error in initailization of this manager
+ERROR -2818 fragMgrInitErr: error connecting to library (error occured in sub prepare)
+ERROR -2817 fragLibConnErr: boot library has initialization routine
+ERROR -2816 fragInitRtnUsageErr: circularity detected in mandatory initialization order
+ERROR -2815 fragInitLoop: import library was too new and therefore incompatible
+ERROR -2814 fragImportTooNew: import library was too old and therefore incompatible
+ERROR -2813 fragImportTooOld: order error during user initialization function invocation
+ERROR -2812 fragObjectInitSeqErr: no more context idÕs
+ERROR -2811 fragNoContextIDs: out of memory in user's address space for loadable section
+ERROR -2810 fragNoAddrSpace: out of memory for interal bookkeeping
+ERROR -2809 fragNoMem: unused
+ERROR -2808 fragUnused1: loaded fragment had "hard" unresolved imports
+ERROR -2807 fragHadUnresolveds: fragment container format unknown
+ERROR -2806 fragFormatUnknown: registered name already in use
+ERROR -2805 fragDupRegLibName: library name not found in Frag registry
+ERROR -2804 fragLibNotFound: section was not found
+ERROR -2803 fragSectionNotFound: symbol was not found in connection
+ERROR -2802 fragSymbolNotFound: connecionID was not valid
+ERROR -2801 fragConnectionIDNotFound: contextID was not valid
+ERROR -2800 fragContextNotFound: CFM error codes
+ERROR -2780 errASInconsistentNames
+ERROR -2763 errASNoResultReturned
+ERROR -2762 errASParameterNotForEvent
+ERROR -2761 errASIllegalFormalParameter
+ERROR -2760 errASTerminologyNestingTooDeep
+ERROR -2721 errASCantCompareMoreThan32k
+ERROR -2720 errASCantConsiderAndIgnore
+ERROR -2526 mmInternalError: drag was not accepted by receiver
+ERROR -2519 tsmUnknownErr: unSupported interface type error
+ERROR -2518 tsmUnsupportedTypeErr: script has no imput method or is using old IM
+ERROR -2517 tsmScriptHasNoIMErr: returned by GetDefaultInputMethod
+ERROR -2516 tsmInputMethodIsOldErr: text service already opened for the document
+ERROR -2515 tsmComponentAlreadyOpenErr: text service is not open
+ERROR -2514 tsmTSNotOpenErr: the text service has no menu
+ERROR -2513 tsmTSHasNoMenuErr: not TSM aware because we are using input window
+ERROR -2512 tsmUseInputWindowErr: there are open documents
+ERROR -2511 tsmDocumentOpenErr: no text service found
+ERROR -2510 tsmTextServiceNotFoundErr: canÕt open the component
+ERROR -2509 tsmCantOpenComponentErr: no open text service
+ERROR -2508 tsmNoOpenTSErr: document is NOT active
+ERROR -2507 tsmDocNotActiveErr: document is still active
+ERROR -2506 tsmTSMDocBusyErr: invalid TSM documentation id
+ERROR -2505 tsmInvalidDocIDErr: app never registered error (not TSM aware)
+ERROR -2504 tsmNeverRegisteredErr: want to register again error
+ERROR -2503 tsmAlreadyRegisteredErr: not an application error
+ERROR -2502 tsmNotAnAppErr: component result no error
+ERROR -2501 tsmInputMethodNotFoundErr
+ERROR -2500 tsmUnsupScriptLanguageErr
+ERROR -2209 badCallOrderErr: Usually due to a status call being called prior to being setup first
+ERROR -2208 noDMAErr: CanÕt do DMA digitizing (i.e. can't go to requested dest
+ERROR -2207 badDepthErr: CanÕt digitize into this depth
+ERROR -2206 notExactSizeErr: CanÕt do exact size requested
+ERROR -2205 noMoreKeyColorsErr: all key indexes in use
+ERROR -2204 notExactMatrixErr: warning of bad matrix digitizer did its best
+ERROR -2203 matrixErr: bad matrix digitizer did nothing
+ERROR -2202 qtParamErr: bad input parameter (out of range etc)
+ERROR -2201 digiUnimpErr: feature unimplemented
+ERROR -2062 movieTextNotFoundErr
+ERROR -2059 samplesAlreadyInMediaErr
+ERROR -2058 auxiliaryExportDataUnavailable
+ERROR -2057 unsupportedAuxiliaryImportData
+ERROR -2056 soundSupportNotAvailableErr: QT for Windows error
+ERROR -2055 noSoundTrackInMovieErr: QT for Windows error
+ERROR -2054 noVideoTrackInMovieErr: QT for Windows error
+ERROR -2053 featureUnsupported
+ERROR -2052 couldNotUseAnExistingSample
+ERROR -2051 noDefaultDataRef
+ERROR -2050 badDataRefIndex
+ERROR -2049 invalidDataRefContainer
+ERROR -2048 noMovieFound
+ERROR -2047 dataNoDataRef
+ERROR -2046 endOfDataReached
+ERROR -2045 dataAlreadyClosed
+ERROR -2044 dataAlreadyOpenForWrite
+ERROR -2043 dataNotOpenForWrite
+ERROR -2042 dataNotOpenForRead
+ERROR -2041 invalidSampleDescription
+ERROR -2040 invalidChunkCache
+ERROR -2039 invalidSampleDescIndex
+ERROR -2038 invalidChunkNum
+ERROR -2037 invalidSampleNum
+ERROR -2036 invalidRect
+ERROR -2035 cantEnableTrack
+ERROR -2034 internalQuickTimeError
+ERROR -2033 badEditIndex
+ERROR -2032 timeNotInMedia
+ERROR -2031 timeNotInTrack
+ERROR -2030 trackNotInMovie
+ERROR -2029 trackIDNotFound
+ERROR -2028 badTrackIndex
+ERROR -2027 maxSizeToGrowTooSmall
+ERROR -2026 userDataItemNotFound
+ERROR -2025 staleEditState
+ERROR -2024 nonMatchingEditState
+ERROR -2023 invalidEditState
+ERROR -2022 cantCreateSingleForkFile: happens when file already exists
+ERROR -2021 wfFileNotFound
+ERROR -2020 movieToolboxUninitialized
+ERROR -2019 progressProcAborted
+ERROR -2018 mediaTypesDontMatch
+ERROR -2017 badEditList
+ERROR -2016 cantPutPublicMovieAtom
+ERROR -2015 invalidTime
+ERROR -2014 invalidDuration
+ERROR -2013 invalidHandler
+ERROR -2012 invalidDataRef
+ERROR -2011 invalidSampleTable
+ERROR -2010 invalidMovie
+ERROR -2009 invalidTrack
+ERROR -2008 invalidMedia
+ERROR -2007 noDataHandler
+ERROR -2006 noMediaHandler
+ERROR -2005 badComponentType
+ERROR -2004 cantOpenHandler
+ERROR -2003 cantFindHandler
+ERROR -2002 badPublicMovieAtom
+ERROR -2001 badImageDescription
+ERROR -2000 couldNotResolveDataRef
+ERROR -1857 dragNotAcceptedErr: handler not found
+ERROR -1856 handlerNotFoundErr: handler already exists
+ERROR -1855 duplicateHandlerErr: error while trying to get flavor data
+ERROR -1854 cantGetFlavorErr: flavor type already exists
+ERROR -1853 duplicateFlavorErr: unknown flavor type
+ERROR -1852 badDragFlavorErr: unknown drag item reference
+ERROR -1851 badDragItemErr: unknown drag reference
+ERROR -1850 badDragRefErr: Drag Manager error codes
+ERROR -1813 errEndOfBody
+ERROR -1812 errEndOfDocument
+ERROR -1811 errTopOfBody
+ERROR -1810 errTopOfDocument
+ERROR -1801 errOffsetIsOutsideOfView
+ERROR -1800 errOffsetInvalid
+ERROR -1762 errOSACantOpenComponent: Can't connect to scripting system with that ID
+ERROR -1761 errOSAComponentMismatch: Parameters are from 2 different components
+ERROR -1759 errOSADataFormatTooNew
+ERROR -1758 errOSADataFormatObsolete
+ERROR -1757 errOSANoSuchDialect
+ERROR -1756 errOSASourceNotAvailable
+ERROR -1754 errOSABadSelector
+ERROR -1753 errOSAScriptError
+ERROR -1752 errOSABadStorageType
+ERROR -1751 errOSAInvalidID
+ERROR -1750 errOSASystemError
+ERROR -1732 errAERecordingIsAlreadyOn: available only in version 1.0.1 or greater
+ERROR -1731 errAEUnknownObjectType: available only in version 1.0.1 or greater
+ERROR -1730 errAEEmptyListContainer: Attempt to pass empty list as container to accessor
+ERROR -1729 errAENegativeCount: CountProc returned negative value
+ERROR -1728 errAENoSuchObject: e.g.: specifier asked for the 3rd but there are only 2. Basically this indicates a run-time resolution error.
+ERROR -1727 errAENotAnObjSpec: Param to AEResolve not of type 'obj '
+ERROR -1726 errAEBadTestKey: Test is neither typeLogicalDescriptor nor typeCompDescriptor
+ERROR -1725 errAENoSuchLogical: Something other than AND OR or NOT
+ERROR -1723 errAEAccessorNotFound: Accessor proc matching wantClass and containerType or wildcards not found
+ERROR -1721 errAEWrongNumberArgs: Logical op kAENOT used with other than 1 term
+ERROR -1720 errAEImpossibleRange: A range like 3rd to 2nd or 1st to all.
+ERROR -1719 errAEIllegalIndex: index is out of range in a put operation
+ERROR -1718 errAEReplyNotArrived: the contents of the reply you are accessing have not arrived yet
+ERROR -1717 errAEHandlerNotFound: no handler in the dispatch tables fits the parameters to AEGetEventHandler or AEGetCoercionHandler
+ERROR -1716 errAEUnknownAddressType: the target address type is not known
+ERROR -1715 errAEParamMissed: a required parameter was not accessed
+ERROR -1714 errAENotASpecialFunction: there is no special function forwith this keyword
+ERROR -1713 errAENoUserInteraction: no user interaction is allowed
+ERROR -1712 errAETimeout: the AppleEvent timed out
+ERROR -1711 errAEWaitCanceled: in AESend the user cancelled out of wait loop for reply or receipt
+ERROR -1710 errAEUnknownSendMode: mode wasn't NoReply WaitReply or QueueReply or Interaction level is unknown
+ERROR -1709 errAEReplyNotValid: AEResetTimer was passed an invalid reply parameter
+ERROR -1708 errAEEventNotHandled: the AppleEvent was not handled by any handler
+ERROR -1707 errAENotAppleEvent: the event is not in AppleEvent format
+ERROR -1706 errAENewerVersion: need newer version of the AppleEvent manager
+ERROR -1705 errAEBadListItem: the specified list item does not exist
+ERROR -1704 errAENotAEDesc
+ERROR -1703 errAEWrongDataType
+ERROR -1702 errAECorruptData
+ERROR -1701 errAEDescNotFound
+ERROR -1700 errAECoercionFail: bad parameter data or unable to coerce the data supplied
+ERROR -1310 fsDataTooBigErr: file or volume is too big for system
+ERROR -1309 fileBoundsErr: file's EOF offset mark or size is too big
+ERROR -1308 notARemountErr: when _Mount allows only remounts and doesn't get one
+ERROR -1307 badFidErr: file id is dangling or doesn't match with the file number
+ERROR -1306 sameFileErr: can't exchange a file with itself
+ERROR -1305 desktopDamagedErr: desktop database files are corrupted
+ERROR -1304 catChangedErr: the catalog has been modified
+ERROR -1303 diffVolErr: files on different volumes
+ERROR -1302 notAFileErr: directory specified
+ERROR -1301 fidExists: file id already exists
+ERROR -1300 fidNotFound: no file thread exists.
+ERROR -1280 errRefNum: bad connection refNum
+ERROR -1279 errAborted: control call was aborted
+ERROR -1278 errState: bad connection state for this operation
+ERROR -1277 errOpening: open connection request failed
+ERROR -1276 errAttention: attention message too long
+ERROR -1275 errFwdReset: read terminated by forward reset
+ERROR -1274 errDSPQueueSize: DSP ReadWrite Queue Too small
+ERROR -1273 errOpenDenied: open connection request was denied
+ERROR -1105 reqAborted
+ERROR -1104 noDataArea
+ERROR -1103 noSendResp
+ERROR -1102 cbNotFound
+ERROR -1101 noRelErr
+ERROR -1100 badBuffNum
+ERROR -1099 badATPSkt
+ERROR -1098 tooManySkts
+ERROR -1097 tooManyReqs
+ERROR -1096 reqFailed
+ERROR -1075 aspNoAck: No ack on attention request (server err)
+ERROR -1074 aspTooMany: Too many clients (server error)
+ERROR -1073 aspSizeErr: Command block too big
+ERROR -1072 aspSessClosed: Session closed
+ERROR -1071 aspServerBusy: Server cannot open another session
+ERROR -1070 aspParamErr: Parameter error
+ERROR -1069 aspNoServers: No servers at that address
+ERROR -1068 aspNoMoreSess: No more sessions on server
+ERROR -1067 aspBufTooSmall: Buffer too small
+ERROR -1066 aspBadVersNum: Server cannot support this ASP version
+ERROR -1029 nbpNISErr: Error trying to open the NIS
+ERROR -1028 nbpNotFound: Name not found on remove
+ERROR -1027 nbpDuplicate: Duplicate name exists already
+ERROR -1026 nbpConfDiff: Name confirmed at different socket
+ERROR -1025 nbpNoConfirm
+ERROR -1024 nbpBuffOvr: Buffer overflow in LookupName
+ERROR -1000 noMaskFoundErr: Icon Utilties Error
+ERROR -932 guestNotAllowedErr: destination port requires authentication
+ERROR -931 badLocNameErr: location name malformed
+ERROR -930 badServiceMethodErr: illegal service type or not supported
+ERROR -928 noUserRecErr: Invalid user reference number
+ERROR -927 authFailErr: unable to authenticate user at destination
+ERROR -926 noInformErr: PPCStart failed because destination did not have inform pending
+ERROR -925 networkErr: An error has occured in the network not too likely
+ERROR -924 noUserRefErr: unable to create a new userRefNum
+ERROR -923 notLoggedInErr: The default userRefNum does not yet exist
+ERROR -922 noDefaultUserErr: user hasn't typed in owners name in Network Setup Control Pannel
+ERROR -919 badPortNameErr: PPCPortRec malformed
+ERROR -917 sessClosedErr: session was closed
+ERROR -916 portClosedErr: port was closed
+ERROR -915 noResponseErr: unable to contact destination
+ERROR -914 noToolboxNameErr: A system resource is missing not too likely
+ERROR -913 noMachineNameErr: user hasn't named his Macintosh in the Network Setup Control Panel
+ERROR -912 userRejectErr: Destination rejected the session request
+ERROR -911 noUserNameErr: user name unknown on destination machine
+ERROR -910 portNameExistsErr: port is already open (perhaps in another app)
+ERROR -909 badReqErr: bad parameter or invalid state for operation
+ERROR -908 noSessionErr: Invalid session reference number
+ERROR -907 sessTableErr: Out of session tables try again later
+ERROR -906 destPortErr: Port does not exist at destination
+ERROR -905 localOnlyErr: Network activity is currently disabled
+ERROR -904 noGlobalsErr: The system is hosed better re-boot
+ERROR -903 noPortErr: Unable to open port or bad portRefNum
+ERROR -902 nameTypeErr: Invalid or inappropriate locationKindSelector in locationName
+ERROR -900 notInitErr: PPCToolBox not initialized
+ERROR -863 hmCloseViewActive: Returned from HMRemoveBalloon if CloseView was active
+ERROR -862 hmNoBalloonUp: Returned from HMRemoveBalloon if no balloon was visible when call was made
+ERROR -861 hmOperationUnsupported: Returned from HMShowBalloon call if bad method passed to routine
+ERROR -859 hmUnknownHelpType: Returned if help msg record contained a bad type
+ERROR -858 hmWrongVersion: Returned if help mgr resource was the wrong version
+ERROR -857 hmSkippedBalloon: Returned from calls if helpmsg specified a skip balloon
+ERROR -855 hmHelpManagerNotInited: Returned from HMGetHelpMenuHandle if help menu not setup
+ERROR -854 hmSameAsLastBalloon: Returned from HMShowMenuBalloon if menu & item is same as last time
+ERROR -853 hmBalloonAborted: Returned if mouse was moving or mouse wasn't in window port rect
+ERROR -850 hmHelpDisabled: Show Balloons mode was off call to routine ignored
+ERROR -813 rcDBPackNotInited: incompatible versions
+ERROR -812 rcDBWrongVersion: no app handler for specified data type
+ERROR -811 rcDBNoHandler: tried to kill a bad pb
+ERROR -810 rcDBBadAsyncPB: ddev does not support async calls
+ERROR -809 rcDBAsyncNotSupp: bad ddev specified on DBInit
+ERROR -808 rcDBBadDDEV: bad session number for DBGetConnInfo
+ERROR -807 rcDBBadSessNum: Database access error codes
+ERROR -806 rcDBBadSessID
+ERROR -805 rcDBExec
+ERROR -804 rcDBBreak
+ERROR -803 rcDBBadType
+ERROR -802 rcDBError
+ERROR -801 rcDBValue
+ERROR -800 rcDBNull
+ERROR -626 noMMUErr: no MMU present
+ERROR -625 cannotDeferErr: unable to defer additional functions
+ERROR -624 interruptsMaskedErr: donÕt call with interrupts masked
+ERROR -623 notLockedErr: specified range of memory is not locked
+ERROR -622 cannotMakeContiguousErr: cannot make specified range contiguous
+ERROR -621 notHeldErr: specified range of memory is not held
+ERROR -620 notEnoughMemoryErr: insufficient physical memory
+ERROR -619 threadProtocolErr
+ERROR -618 threadNotFoundErr
+ERROR -617 threadTooManyReqsErr
+ERROR -610 noUserInteractionAllowed: no user interaction allowed
+ERROR -609 connectionInvalid
+ERROR -608 noOutstandingHLE
+ERROR -607 bufferIsSmall: error returns from Post and Accept
+ERROR -606 appIsDaemon: app is BG-only and launch flags disallow this
+ERROR -605 appMemFullErr: application SIZE not big enough for launch
+ERROR -604 hardwareConfigErr: hardware configuration not correct for call
+ERROR -603 protocolErr: app made module calls in improper order
+ERROR -602 appModeErr: memory mode is 32-bit but app not 32-bit clean
+ERROR -601 memFragErr: not enough room to launch app wspecial requirements
+ERROR -600 procNotFound: no eligible process with specified descriptor
+ERROR -502 hwParamErr: bad selector for _HWPriv
+ERROR -501 teScrapSizeErr: scrap item too big for text edit record
+ERROR -500 rgnTooBigErr
+ERROR -492 exUserBreak: user debugger break; execute debugger commands on stack
+ERROR -491 strUserBreak: user debugger break; display string on stack
+ERROR -490 userBreak: user debugger break
+ERROR -463 notThePublisherWrn: not the first registered publisher for that container
+ERROR -462 containerAlreadyOpenWrn: container already opened by this section
+ERROR -461 containerNotFoundWrn: could not find editionContainer at this time
+ERROR -460 multiplePublisherWrn: A Publisher is already registered for that container
+ERROR -454 badSubPartErr: can not use sub parts in this release
+ERROR -453 badEditionFileErr: edition file is corrupt
+ERROR -452 notRegisteredSectionErr: not a registered SectionRecord
+ERROR -451 badSectionErr: not a valid SectionRecord
+ERROR -450 editionMgrInitErr: edition manager not inited by this app
+ERROR -417 btKeyAttrErr: There is no such a key attribute.
+ERROR -416 btKeyLenErr: Maximum key length is too long or equal to zero.
+ERROR -415 btRecNotFnd: Record cannot be found.
+ERROR -414 btDupRecErr: Record already exists.
+ERROR -413 btNoSpace: Can't allocate disk space.
+ERROR -410 notBTree: The file is not a dictionary.
+ERROR -400 gcrOnMFMErr: gcr format on high density media error
+ERROR -360 slotNumErr: invalid slot # error
+ERROR -351 smRecNotFnd: Record not found in the SRT.
+ERROR -350 smSRTOvrFlErr: SRT over flow.
+ERROR -349 smNoGoodOpens: No opens were successfull in the loop.
+ERROR -348 smOffsetErr: Offset was too big (temporary error
+ERROR -347 smByteLanesErr: NumByteLanes was determined to be zero.
+ERROR -346 smBadsPtrErr: Bad pointer was passed to sCalcsPointer
+ERROR -345 smsGetDrvrErr: Error occurred during _sGetDriver.
+ERROR -344 smNoMoresRsrcs: No more sResources
+ERROR -343 smDisDrvrNamErr: Error occured during _sDisDrvrName.
+ERROR -342 smGetDrvrNamErr: Error occured during _sGetDrvrName.
+ERROR -341 smCkStatusErr: Status of slot fail.
+ERROR -340 smBlkMoveErr: _BlockMove error
+ERROR -339 smNewPErr: _NewPtr error
+ERROR -338 smSelOOBErr: Selector out of bounds error
+ERROR -337 smSlotOOBErr: Slot out of bounds error
+ERROR -336 smNilsBlockErr: Nil sBlock error (Dont allocate and try to use a nil sBlock)
+ERROR -335 smsPointerNil: LPointer is nil From sOffsetData. If this error occurs; check sInfo rec for more information.
+ERROR -334 smCPUErr: Code revision is wrong
+ERROR -333 smCodeRevErr: Code revision is wrong
+ERROR -332 smReservedErr: Reserved field not zero
+ERROR -331 smBadsList: Bad sList: Id1 < Id2 < Id3 ...format is not followed.
+ERROR -330 smBadRefId: Reference Id not found in List
+ERROR -320 smBusErrTO: BusError time out.
+ERROR -319 smBadBoardId: BoardId was wrong; re-init the PRAM record.
+ERROR -318 smNoJmpTbl: SDM jump table could not be created. or smReservedSlot: slot is reserved VM should not use this address space.
+ERROR -317 smInitTblVErr: An error occured while trying to initialize the Slot Resource Table.
+ERROR -316 smInitStatVErr: The InitStatusV field was negative after primary or secondary init.
+ERROR -315 smNoBoardId: No Board Id.
+ERROR -314 smGetPRErr: Error occured during _sGetPRAMRec (See SIMStatus).
+ERROR -313 smNoBoardSRsrc: No Board sResource.
+ERROR -312 smDisposePErr: _DisposePointer error
+ERROR -311 smFHBlkDispErr: Error occured during _sDisposePtr (Dispose of FHeader block).
+ERROR -310 smFHBlockRdErr: Error occured during _sGetFHeader.
+ERROR -309 smBLFieldBad: ByteLanes field was bad.
+ERROR -308 smUnExBusErr: Unexpected BusError
+ERROR -307 smResrvErr: Fatal reserved error. Resreved field <> 0.
+ERROR -306 smNosInfoArray: No sInfoArray. Memory Mgr error.
+ERROR -305 smDisabledSlot: This slot is disabled (-305 use to be smLWTstBad)
+ERROR -304 smNoDir: Directory offset is Nil
+ERROR -303 smRevisionErr: Wrong revison level
+ERROR -302 smFormatErr: FHeader Format is not Apple's
+ERROR -301 smCRCFail: CRC check failed for declaration data
+ERROR -300 smEmptySlot: No card in slot
+ERROR -299 nmTypErr: wrong queue type
+ERROR -293 smPriInitErr: Error; Cards could not be initialized.
+ERROR -292 smPRAMInitErr: Error; Slot Resource Table could not be initialized.
+ERROR -291 smSRTInitErr: Error; Slot Resource Table could not be initialized.
+ERROR -290 smSDMInitErr: Error; SDM could not be initialized.
+ERROR -261 midiInvalidCmdErr: command not supported for port type
+ERROR -260 midiDupIDErr: duplicate client ID
+ERROR -259 midiNameLenErr: name supplied is longer than 31 characters
+ERROR -258 midiWriteErr: MIDIWritePacket couldn't write to all connected ports
+ERROR -257 midiNoConErr: no connection exists between specified ports
+ERROR -256 midiVConnectRmvd: pending virtual connection removed
+ERROR -255 midiVConnectMade: pending virtual connection resolved
+ERROR -254 midiVConnectErr: pending virtual connection created
+ERROR -253 midiTooManyConsErr: too many connections made
+ERROR -252 midiTooManyPortsErr: too many ports already installed in the system
+ERROR -251 midiNoPortErr: no port with that ID found
+ERROR -250 midiNoClientErr: no client with that ID found
+ERROR -247 badInputText
+ERROR -246 badDictFormat
+ERROR -245 incompatibleVoice
+ERROR -244 voiceNotFound
+ERROR -243 bufTooSmall
+ERROR -242 synthNotReady
+ERROR -241 synthOpenFailed
+ERROR -240 noSynthFound
+ERROR -232 siUnknownQuality: invalid quality selector (returned by driver)
+ERROR -231 siUnknownInfoType: invalid info type selector (returned by driver)
+ERROR -230 siInputDeviceErr: input device hardware failure
+ERROR -229 siBadRefNum: invalid input device reference number
+ERROR -228 siBadDeviceName: input device could not be opened
+ERROR -227 siDeviceBusyErr: input device already in use
+ERROR -226 siInvalidSampleSize: invalid sample size
+ERROR -225 siInvalidSampleRate: invalid sample rate
+ERROR -224 siHardDriveTooSlow: hard drive too slow to record to disk
+ERROR -223 siInvalidCompression: invalid compression type
+ERROR -222 siNoBufferSpecified: returned by synchronous SPBRecord if nil buffer passed
+ERROR -221 siBadSoundInDevice: invalid index passed to SoundInGetIndexedDevice
+ERROR -220 siNoSoundInHardware: no Sound Input hardware
+ERROR -212 noMoreRealTime: not enough CPU cycles left to add another task
+ERROR -211 channelNotBusy
+ERROR -210 buffersTooSmall: can not operate in the memory allowed
+ERROR -209 channelBusy: the Channel is being used for a PFD already
+ERROR -208 badFileFormat: was not type AIFF or was of bad formatcorrupt
+ERROR -207 notEnoughBufferSpace: could not allocate enough memory
+ERROR -206 badFormat: Sound Manager Error Returns
+ERROR -205 badChannel: Sound Manager Error Returns
+ERROR -204 resProblem: Sound Manager Error Returns
+ERROR -203 queueFull: Sound Manager Error Returns
+ERROR -201 notEnoughHardwareErr: Sound Manager Error Returns
+ERROR -200 noHardwareErr: Sound Manager Error Returns
+ERROR -199 mapReadErr: map inconsistent with operation
+ERROR -198 resAttrErr: attribute inconsistent with operation
+ERROR -197 rmvRefFailed: RmveReference failed
+ERROR -196 rmvResFailed: RmveResource failed
+ERROR -195 addRefFailed: AddReference failed
+ERROR -194 addResFailed: AddResource failed
+ERROR -193 resFNotFound: Resource file not found
+ERROR -192 resNotFound: Resource not found
+ERROR -190 inputOutOfBounds: Offset of Count out of bounds
+ERROR -189 writingPastEnd: Writing past end of file
+ERROR -188 resourceInMemory: Resource already in memory
+ERROR -186 CantDecompress: resource bent ("the bends") - can't decompress a compressed resource
+ERROR -185 badExtResource: extended resource has a bad format.
+ERROR -157 cDepthErr: invalid pixel depth
+ERROR -156 cResErr: invalid resolution for MakeITable
+ERROR -155 cDevErr: invalid type of graphics device
+ERROR -154 cProtectErr: colorTable entry protection violation
+ERROR -153 cRangeErr: range error on colorTable request
+ERROR -152 cNoMemErr: failed to allocate memory for structure
+ERROR -151 cTempMemErr: failed to allocate memory for temporary structures
+ERROR -150 cMatchErr: Color2Index failed to find an index
+ERROR -149 insufficientStackErr or nsStackErr
+ERROR -148 pixMapTooDeepErr
+ERROR -147 rgnOverflowErr or rgnTooBigError
+ERROR -145 noMemForPictPlaybackErr
+ERROR -128 userCanceledErr
+ERROR -127 hMenuFindErr: could not find HMenu's parent in MenuKey
+ERROR -126 mBarNFnd: system error code for MBDF not found
+ERROR -125 updPixMemErr: insufficient memory to update a pixmap
+ERROR -124 volGoneErr: Server volume has been disconnected.
+ERROR -123 wrgVolTypErr: Wrong volume type error [operation not supported for MFS]
+ERROR -122 badMovErr: Move into offspring error
+ERROR -121 tmwdoErr: No free WDCB available
+ERROR -120 dirNFErr: Directory not found
+ERROR -117 memLockedErr: trying to move a locked block (MoveHHi)
+ERROR -116 memSCErr: Size Check failed
+ERROR -115 memBCErr: Block Check failed
+ERROR -114 memPCErr: Pointer Check failed
+ERROR -113 memAZErr: Address in zone check failed
+ERROR -112 memPurErr: trying to purge a locked or non-purgeable block
+ERROR -111 memWZErr: WhichZone failed (applied to free block)
+ERROR -110 memAdrErr: address was odd; or out of range
+ERROR -109 nilHandleErr: Master Pointer was NIL in HandleZone or other
+ERROR -108 iMemFullErr or memFullErr: Not enough room in heap zone
+ERROR -102 noTypeErr: No object of that type in scrap
+ERROR -100 noScrapErr: No scrap exists error
+ERROR -99 memROZWarn: soft error in ROZ or memROZError: hard error in ROZ or memROZErr: hard error in ROZ
+ERROR -98 portNotCf: driver Open error code (parameter RAM not configured for this connection)
+ERROR -97 portInUse: driver Open error code (port is in use)
+ERROR -96 portNotPwr: serial port not currently powered
+ERROR -95 excessCollsns: excessive collisions on write
+ERROR -94 lapProtErr: error in attachingdetaching protocol
+ERROR -93 noBridgeErr: no network bridge for non-local send
+ERROR -92 ddpLenErr: data length too big or eLenErr: ENET error codes
+ERROR -91 ddpSktErr: error in soket number or eMultiErr: Length error ddpLenErr
+ERROR -90 breakRecd: Break received (SCC)
+ERROR -89 rcvrErr: SCC receiver error (framing; parity; OR)
+ERROR -88 prInitErr: InitUtil found the parameter ram uninitialized
+ERROR -87 prWrErr: parameter ram written didn't read-verify
+ERROR -86 clkWrErr: time written did not verify
+ERROR -85 clkRdErr: unable to read same clock value twice
+ERROR -84 firstDskErr: IO System Errors or verErr: track failed to verify
+ERROR -83 fmt2Err: can't get enough sync
+ERROR -82 fmt1Err: can't find sector 0 after track format
+ERROR -81 sectNFErr: sector number never found on a track
+ERROR -80 seekErr: track number wrong on address mark
+ERROR -79 spdAdjErr: unable to correctly adjust disk speed
+ERROR -78 twoSideErr: tried to read 2nd side on a 1-sided drive
+ERROR -77 initIWMErr: unable to initialize IWM
+ERROR -76 tk0BadErr: track 0 detect doesn't change
+ERROR -75 cantStepErr: step handshake failed
+ERROR -74 wrUnderrun: write underrun occurred
+ERROR -73 badDBtSlp: bad data mark bit slip nibbles
+ERROR -72 badDCksum: bad data mark checksum
+ERROR -71 noDtaMkErr: couldn't find a data mark header
+ERROR -70 badBtSlpErr: bad addr mark bit slip nibbles
+ERROR -69 badCksmErr: addr mark checksum didn't check
+ERROR -68 dataVerErr: read verify compare failed
+ERROR -67 noAdrMkErr: couldn't find valid addr mark
+ERROR -66 fontSubErr: font substitution occured or noNybErr: couldn't find 5 nybbles in 200 tries
+ERROR -65 fontNotDeclared: font not declared or offLinErr: rw requested for an off-line drive
+ERROR -64 fontDecError: error during font declaration or lastDskErr: IO System Errors or noDriveErr: drive not installed
+ERROR -61 wrPermErr: write permissions error
+ERROR -60 badMDBErr: bad master directory block
+ERROR -59 fsRnErr: file system internal error:during rename the old entry was deleted but could not be restored.
+ERROR -58 extFSErr: volume in question belongs to an external fs
+ERROR -57 noMacDskErr: not a mac diskette (sig bytes are wrong)
+ERROR -56 nsDrvErr: no such drive (tried to mount a bad drive num)
+ERROR -55 volOnLinErr: drive volume already on-line at MountVol
+ERROR -54 permErr: permissions error (on file open)
+ERROR -53 volOffLinErr: volume not on line error (was Ejected)
+ERROR -52 gfpErr: get file position error
+ERROR -51 rfNumErr: refnum error
+ERROR -50 paramErr: error in user parameter list
+ERROR -49 opWrErr: file already open with with write permission
+ERROR -48 dupFNErr: duplicate filename (rename)
+ERROR -47 fBsyErr: File is busy (delete)
+ERROR -46 vLckdErr: volume is locked
+ERROR -45 fLckdErr: file is locked
+ERROR -44 wPrErr: diskette is write protected.
+ERROR -43 fnfErr: File not found
+ERROR -42 tmfoErr: too many files open
+ERROR -41 mFulErr: memory full (open) or file won't fit (load)
+ERROR -40 posErr: tried to position to before start of file (rw)
+ERROR -39 eofErr: End of file
+ERROR -38 fnOpnErr: File not open
+ERROR -37 bdNamErr: there may be no bad names in the final system!
+ERROR -36 ioErr: IO error (bummers)
+ERROR -35 nsvErr: no such volume
+ERROR -34 dskFulErr: disk full
+ERROR -33 dirFulErr: Directory full
+ERROR -30 dceExtErr: dce extension error
+ERROR -29 unitTblFullErr: unit table has no more entries
+ERROR -28 notOpenErr: Couldn't rdwrctlsts cause driver not opened
+ERROR -27 abortErr: IO call aborted by KillIO or iIOAbortErr: IO abort error (Printing Manager) or iIOAbort
+ERROR -26 dInstErr: DrvrInstall couldn't find driver in resources
+ERROR -25 dRemovErr: tried to remove an open driver
+ERROR -24 closErr: IO System Errors
+ERROR -23 openErr: IO System Errors
+ERROR -22 unitEmptyErr: IO System Errors
+ERROR -21 badUnitErr: IO System Errors
+ERROR -20 writErr: IO System Errors
+ERROR -19 readErr: IO System Errors
+ERROR -18 statusErr: IO System Errors
+ERROR -17 controlErr: IO System Errors
+ERROR -13 dsExtensionsDisabled: say ÒExtensions DisabledÓ
+ERROR -12 dsHD20Installed: say ÒHD20 StartupÓ
+ERROR -11 dsDisassemblerInstalled: say ÒDisassembler InstalledÓ
+ERROR -10 dsMacsBugInstalled: say ÒMacsBug InstalledÓ
+ERROR -8 seNoDB: no debugger installed to handle debugger command
+ERROR -5 SlpTypeErr: invalid queue element
+ERROR -4 unimpErr: unimplemented core routine
+ERROR -3 corErr: core routine number out of range
+ERROR -2 vTypErr: invalid queue element
+ERROR -1 qErr: queue element not found during deletion or telGenericError
+ERROR errAECorruptData errOSACorruptData
+ERROR dsCDEFNotFound CDEFNFnd
+ERROR dsWDEFNotFound WDEFNFnd
+ERROR noHardwareErr noHardware: obsolete spelling
+ERROR errAERecordingIsAlreadyOn errOSARecordingIsAlreadyOn
+ERROR notEnoughHardwareErr notEnoughHardware: obsolete spelling
+ERROR movieToolboxUninitialized noRecordOfApp: replica
+ERROR -1 evtNotEnb: event not enabled at PostEvent or siInitSDTblErr: slot int dispatch table could not be initialized. or dsBusError: bus error
+ERROR -2 siInitVBLQsErr: VBLqueues for all slots could not be initialized. or dsAddressErr: address error
+ERROR -3 siInitSPTblErr: slot priority table could not be initialized. or dsIllInstErr: illegal instruction error
+ERROR -4 dsZeroDivErr: zero divide error
+ERROR -5 dsChkErr: check trap error
+ERROR -6 dsOvflowErr: overflow trap error
+ERROR -7 dsPrivErr: privilege violation error
+ERROR -8 telNoTools: no telephone tools found in extension folder or dsTraceErr: trace mode error
+ERROR -9 dsLineAErr: line 1010 trap error
+ERROR -10 sdmJTInitErr: SDM Jump Table could not be initialized. or dsLineFErr: line 1111 trap error
+ERROR -11 sdmInitErr: SDM could not be initialized. or dsMiscErr: miscellaneous hardware exception error
+ERROR -12 sdmSRTInitErr: Slot Resource Table could not be initialized. or dsCoreErr: unimplemented core routine error
+ERROR -13 sdmPRAMInitErr: Slot PRAM could not be initialized. or dsIrqErr: uninstalled interrupt error
+ERROR -14 sdmPriInitErr: Cards could not be initialized. or dsIOCoreErr: IO Core Error
+ERROR -15 dsLoadErr: Segment Loader Error
+ERROR -16 dsFPErr: Floating point error
+ERROR -17 dsNoPackErr: package 0 not present
+ERROR -18 dsNoPk1: package 1 not present
+ERROR -19 dsNoPk2: package 2 not present
+ERROR -20 dsNoPk3: package 3 not present
+ERROR -21 dsNoPk4: package 4 not present
+ERROR -22 dsNoPk5: package 5 not present
+ERROR -23 dsNoPk6: package 6 not present
+ERROR -24 dsNoPk7: package 7 not present
+ERROR -25 dsMemFullErr: out of memory!
+ERROR -26 dsBadLaunch: can't launch file
+ERROR -27 dsFSErr: file system map has been trashed
+ERROR -28 dsStknHeap: stack has moved into application heap
+ERROR -30 dsReinsert: request user to reinsert off-line volume
+ERROR -31 dsNotThe1: not the disk I wanted
+ERROR -33 negZcbFreeErr: ZcbFree has gone negative
+ERROR -40 dsGreeting: welcome to Macintosh greeting
+ERROR -41 dsFinderErr: can't load the Finder error
+ERROR -42 shutDownAlert: handled like a shutdown error or dsBadStartupDisk: unable to mount boot volume (sad Mac only)
+ERROR -43 dsSystemFileErr: canÕt find System file to open (sad Mac only)
+ERROR -51 dsBadSlotInt: unserviceable slot interrupt
+ERROR -81 dsBadSANEOpcode: bad opcode given to SANE Pack4
+ERROR -83 dsBadPatchHeader: SetTrapAddress saw the Òcome-fromÓ header
+ERROR -84 menuPrgErr: happens when a menu is purged
+ERROR -85 dsMBarNFnd: Menu Manager Errors
+ERROR -86 dsHMenuFindErr: Menu Manager Errors
+ERROR -87 dsWDEFNotFound: could not load WDEF
+ERROR -88 dsCDEFNotFound: could not load CDEF
+ERROR -89 dsMDEFNotFound: could not load MDEF
+ERROR -90 dsNoFPU: an FPU instruction was executed and the machine doesnÕt have one
+ERROR -98 dsNoPatch: Can't patch for particular Model Mac
+ERROR -99 dsBadPatch: Can't load patch resource
+ERROR -101 dsParityErr: memory parity error
+ERROR -102 dsOldSystem: System is too old for this ROM
+ERROR -103 ds32BitMode: booting in 32-bit on a 24-bit sys
+ERROR -104 dsNeedToWriteBootBlocks: need to write new boot blocks
+ERROR -105 dsNotEnoughRAMToBoot: must have at least 1.5MB of RAM to boot 7.0
+ERROR -106 dsBufPtrTooLow: bufPtr moved too far during boot
+ERROR -1010 dsBadLibrary: DS Errors which are specific to the new runtime model introduced with PowerPC
+ERROR -1011 dsMixedModeFailure: Bad shared library
+ERROR -20000 dsShutDownOrRestart: user choice between ShutDown and Restart
+ERROR -20001 dsSwitchOffOrRestart: user choice between switching off and Restart
+ERROR -20002 dsForcedQuit: allow the user to ExitToShell return if Cancel
+ERROR -20003 dsRemoveDisk: request user to remove disk from manual eject drive
+ERROR -20004 dsDirtyDisk: request user to return a manually-ejected dirty disk
+ERROR -20010 dsSCSIWarn: Portable SCSI adapter warning.
+ERROR -20109 dsShutDownOrResume: allow user to return to Finder or ShutDown
+ERROR -32767 dsSysErr: general system error
