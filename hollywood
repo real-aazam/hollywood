@@ -35,6 +35,8 @@ Help()
 	echo "	-h|--help : Print this help message"
 	echo ""
 	echo ""
+	echo "Press the Control and C keys to stop the script. If you manually closed the terminal screen, then background tasks may still be running. In this case, simply run hollywood again and press the Control and C keys to stop the script and kill background tasks. "
+	echo ""
 
 }
 
