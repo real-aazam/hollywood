@@ -21,7 +21,7 @@ Help()
 {
 
 	# Display Help
-	echo "hollywood: create a hollywood suitable consoles of tech geekery"
+	echo "hollywood (v1.0 for mac osx): create a hollywood suitable consoles of tech geekery"
 	echo "hollywood was originally created by Dustin Kirkland"
 	echo ""
 	echo "This is the version for MacOSX. Suggest improvements for this version at github.com/real-aazam/hollywood"
